@@ -7,11 +7,23 @@ export const accordion = [
 ]
 export const NavLinks = [
   {
-    name: 'Home',
+    name: 'القائمة الرئيسية',
     href: '/home' },
 
     {
-    name: 'Section',
+    name: 'انشطة الاتحاد',
     href: '/section',
-  }
-]
+    },
+    {
+      name: 'قضايا الاتحاد',
+      href: '/section',
+      },
+    {
+      name: 'حملات',
+      href: '/section',
+      },
+    {
+      name: 'صفحة التطوع',
+      href: '/section',
+      },
+]  

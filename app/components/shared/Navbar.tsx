@@ -11,20 +11,20 @@ import link from 'next/link'
   export default function Navbar() { 
   return (
     <>
-    <div className='block'>
+    <div className='flex flex-row'>
       <Image 
         src={EttihadLogo}
         alt='Logo'
         width={300} 
         height={300}
-      /></div>
+      />
+      <div className="flex my-auto">
 
-      <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
               <Navlinks />
               </div>
             {/* <LinkIcon className="w-6" /> */}
-            <p className="hidden md:block">{link.name}</p>
-          
+            <p className="block">{link.name}</p>
+          </div>
 
   </>
   )
