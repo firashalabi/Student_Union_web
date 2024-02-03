@@ -71,6 +71,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#0c0c0c] text-accent;
   }
+}
+
+.my-class :global(.react-tweet-theme) {
+  height: 300px;
 }

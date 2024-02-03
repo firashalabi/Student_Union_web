@@ -1,9 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import {  Kufam } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/shared/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const kufam = Kufam({ 
+  subsets: ['arabic'],
+  weight: '500'
+
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,10 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={inter.className}>{children}
-        <div className="flex ">
-          {/* <Navbar /> */}
-        </div>
+      <body className={`${kufam.className} leading-5 flex-row justify-center`}>{children}
       </body>
     </html>
   )

@@ -1,6 +1,7 @@
 "use client"
 import Home from '@/app/page'
     import EttihadLogo from '@/public/ettihad-black.png'
+    import EttihadWhiteLogo from '@/public/ettihad-white.png'
     import Image from 'next/image'
 import Link from 'next/link'
 import Navlinks from '../ui/nav-links'
@@ -11,19 +12,17 @@ import link from 'next/link'
   export default function Navbar() { 
   return (
     <>
-    <div className='flex flex-row'>
+    <div className='flex'>
       <Image 
-        src={EttihadLogo}
+        src={EttihadWhiteLogo}
         alt='Logo'
-        width={300} 
-        height={300}
+        width={200} 
+        height={200}
       />
-      <div className="flex my-auto">
+      <div className=" hidden md:flex text-center my-auto">
 
               <Navlinks />
               </div>
-            {/* <LinkIcon className="w-6" /> */}
-            <p className="block">{link.name}</p>
           </div>
 
   </>
