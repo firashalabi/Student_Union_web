@@ -55,7 +55,7 @@ export default function Home() {
         <h2 className='font-bold'>قضايا الاتحاد </h2>
        </div>
 
-       <div className="flex flex-grid bg-black items-start w-[1000px] h-[500px] mt-[3%] ">
+       <div className="flex-grid bg-black items-start w-fulll h-[500px] mt-[3%] ">
         
         {/* <div className='w-[400px] h-[200px] bg-white'></div>
         <div className='w-[400px] h-[200px] bg-white'></div> */}
