@@ -58,11 +58,11 @@ export default function Home() {
 {/* ))} */}
 
     </section>
-    <section>
-      <div className="m-4 mt-[10px]">
+    <section className='my-[10px]'>
+      <div className="m-4">
         <h1 className='text-bold'>قضايا الاتحاد</h1>
         </div>
-      <div className='w-[600px] h-[400px] md:grid md:grid-cols-2  md:gap-4 md:mx-auto '>
+      <div className=' flex-col mx-auto justify-center  md:grid md:grid-cols-2  md:gap-4 md:mx-auto '>
         {card.map(card => (
         <Card key={card.id} className='bg-[#0c0c0c] text-accent h-[400px] overflow-scroll scrollbar scrollbar-thin '>
             <CardHeader>
@@ -72,11 +72,42 @@ export default function Home() {
               <p>{card.content}</p>
               </CardContent>
         </Card>
-
         ))}
       </div>
-
     </section>
+
+    <section className='m-10'>
+        <div>
+          <ol className={"list-decimal list-inside"}>
+            <li>مصالح المجتمع نقيض مصالح قوى السلطة </li>
+            <li>واقع التعليم نتيجة خيارات قوى النظام:</li>
+            <ul className={"list-disc list-inside"}>
+              <li>حوكمة التعليم </li>
+              <li>نهب التعليم</li>
+              <li>طبقية التعليم</li>
+              <li>أيديولوجيّة تصدير "العمالة الماهرة"</li>
+              <li>التعليم واللجوء</li>
+                </ul>
+                <li>أسباب الخطر المحدق في التعليم في ظل الانهيار</li>
+                <ul className={"list-disc list-inside"}>
+                  <li>الجامعة اللبنانية</li>
+                  <li>القطاع الرسمي</li>
+                  <li>المعاهد</li>
+                  <li>المناهج</li>
+                </ul>
+                <li>الأهداف: خياراتنا</li>
+                <ul className={"list-disc list-inside"}>
+                <li>الجامعة اللبنانيّة</li>
+                <li>القطاع الرسمي</li>
+                <li>القطاع الخاص</li>
+                <li>المعاهد </li>
+                <li>المناهج</li>
+                </ul>
+                <li>الخاتمة </li>
+          </ol>
+        </div>
+    </section>
+    
     </main>
   </>
     )
